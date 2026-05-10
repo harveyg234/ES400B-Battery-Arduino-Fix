@@ -69,7 +69,7 @@ void loop() {
 5. On the battery base connector cable, connect the small green wire to CAN “H” and connect the blue wire to CAN “L” on the MCP2515
 6. Connect the base to the battery and plug in the base cable to the base.
 7. Finally plug in your arduino and if everything has gone correctly, you should now be seeing about 48V being outputted on the large red and black wire on the battery base connector :partying_face:
-![Screenshot_180.png](https://github.com/harveyg234/ES400B-Battery-Arduino-Fix/blob/main/images/Screenshot_180.png)
+<img src="https://raw.githubusercontent.com/harveyg234/ES400B-Battery-Arduino-Fix/refs/heads/main/images/Screenshot_180.png" width="50%">
 
 
 # If you have the battery and nothing else:
