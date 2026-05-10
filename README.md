@@ -1,6 +1,6 @@
-# ES400B-Battery-Arduino-Fix
+# RPH0002 Battery Arduino Fix
 
-This repository is to help you get your ES400B battery working using a arduino and a CAN bus module.
+This repository is to help you get your RPH0002 battery working using a arduino and a CAN bus module.
 
 ## Items needed: 
 - [MCP2515 CAN Bus Module](https://amzn.eu/d/0cbae30o)
@@ -69,8 +69,11 @@ void loop() {
 5. On the battery base connector cable, connect the small green wire to CAN “H” and connect the blue wire to CAN “L” on the MCP2515
 6. Connect the base to the battery and plug in the base cable to the base.
 7. Finally plug in your arduino and if everything has gone correctly, you should now be seeing about 48V being outputted on the large red and black wire on the battery base connector :partying_face:
-<img src="https://raw.githubusercontent.com/harveyg234/ES400B-Battery-Arduino-Fix/refs/heads/main/images/Screenshot_180.png" width="50%">
+<img src="https://raw.githubusercontent.com/harveyg234/RPH0002-Battery-Arduino-Fix/refs/heads/main/images/Screenshot_180.png" width="50%">
 
+**Note: Once the battery recieves this message once, it will allow a small amount of current through it forever. But once something which draws a high amount of current is connected, the battery will lock again meaning you will be required to use this to keep sending the message.**
+The messages Are: **03FF1602#043B8F00002B0412     02FF2602#DDB8FB433D7049DB**
+**The Battery talks at 250000kbps CANbus Baudrate**
 
 # If you have the battery and nothing else:
 **Note: The battery's connectors(pins) are reversible. For example, if positive is on pin 2, then it will also be on pin 13 ect.**
@@ -80,4 +83,4 @@ Use diagram below as reference.
 2. Connect the CAN “L” on the MCP2515 to either pins 2 or 13 on the battery
 3. Connect your arduino to power and your battery should be outputting 48-50v on pins + 1, 14 ,   - 4, 11 :partying_face:
 
-![Screenshot_181.png](https://github.com/harveyg234/ES400B-Battery-Arduino-Fix/blob/main/images/Screenshot_181.png)
+![Screenshot_181.png](https://github.com/harveyg234/RPH0002-Battery-Arduino-Fix/blob/main/images/Screenshot_181.png)
