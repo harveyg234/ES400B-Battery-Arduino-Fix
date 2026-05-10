@@ -72,7 +72,9 @@ void loop() {
 <img src="https://raw.githubusercontent.com/harveyg234/RPH0002-Battery-Arduino-Fix/refs/heads/main/images/Screenshot_180.png" width="50%">
 
 **Note: Once the battery recieves this message once, it will allow a small amount of current through it forever. But once something which draws a high amount of current is connected, the battery will lock again meaning you will be required to use this to keep sending the message.**
+
 The messages Are: **03FF1602#043B8F00002B0412     02FF2602#DDB8FB433D7049DB**
+
 **The Battery talks at 250000kbps CANbus Baudrate**
 
 # If you have the battery and nothing else:
