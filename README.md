@@ -55,15 +55,16 @@ void loop() {
 ```
 
 4. Using the table below, wire up your arduino to the MCP2515 module
-| Arduino Pin | MCP2515 Pin | Purpose |
-| :--- | :--- | :--- |
-| 5V | VCC | Power |
-| GND | GND | Ground |
-| D10 | CS | SPI Chip Select |
-| D12 | SO | SPI MISO |
-| D11 | SI | SPI MOSI |
-| D13 | SCK | SPI Clock |
-| D2 | INT | Interrupt pin |
+
+| **Arduino Pin** | **MCP2515 Pin** | **Purpose**     |
+|-----------------|-----------------|-----------------|
+|        5V       |       VCC       |      Power      |
+|       GND       |       GND       |      Ground     |
+|       D10       |        CS       | SPI Chip Select |
+|       D12       |        SO       |     SPI MISO    |
+|       D11       |        SI       |     SPI MOSI    |
+|       D13       |       SCK       |    SPI Clock    |
+|        D2       |       INT       |  Interrupt pin  |
 
 5. On the battery base connector cable, connect the small green wire to CAN “H” and connect the blue wire to CAN “L” on the MCP2515
 6. Connect the base to the battery and plug in the base cable to the base.
